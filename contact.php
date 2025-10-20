@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="body.css">
+    <link rel="stylesheet" href="formulaire.css">
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <ul>
+                <li><a href="index.html" data-image="./icon/home">Accueil</a></li>
+                <li><a href="skill.html" data-image="./icon/skill">Compétences</a></li>
+                <li><a href="certif.html" data-image="./icon/cert">Certification</a></li>
+                <li><a href="projet.html" data-image="./icon/projet">Projets</a></li>
+                <li><a href="contact.php" data-image="./icon/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container_contact">
+        <div class="form_section">
+            <h1 class="titre_form">Contact</h1>
+            <form class="contact-form" id="contactForm" action="send.php" method="post">
+               
+                <div class="form-group">
+                    <label for="nom">Nom</label>
+                    <input type="text" id="nom" name="nom" placeholder="Nom" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="societe">Société</label>
+                    <input type="text" id="societe" name="societe" placeholder="Société (facultatif)">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Message" required></textarea>
+                </div>
+
+            </form>
+        </div>
+
+        <div class="right-section">
+            <div class="decoration"></div>
+            <div class="button-container1">
+               
+                <img class="play" src="./icon/play.png" style="filter: invert(1); cursor: pointer; width: 80px; height: 80px;" id="sendbtn" alt="Envoyer le formulaire">
+               
+                <p class="contact-text">OU</p>
+                <a href="mailto:gabrielwendy626@gmail.com">Email moi</a>
+               
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 DVPSMLGBO. Tous droits réservés.</p>
+    </footer>
+    <script src="animation.js"></script>
+    <script>
+        // Au clic sur l'image play, envoyer le formulaire
+        document.getElementById("sendbtn").addEventListener("click", function(event) {
+            event.preventDefault();
+            document.getElementById("contactForm").submit();
+        });
+    </script>
+</body>
+</html>
