@@ -1,0 +1,265 @@
+
+@media (max-width: 1024px) {
+  .container {
+    width: 90%;
+    padding-top: 150px;
+  }
+
+  .intro {
+    font-size: 1.5em;
+    padding: 30px;
+  }
+
+  .contenu {
+    padding: 40px 40px;
+  }
+
+  .bts-info {
+    padding: 0 20px;
+    gap: 20px;
+  }
+
+  .box-pr {
+    padding: 30px;
+    margin: 30px 20px;
+  }
+}
+
+/* ========== RESPONSIVE - TABLETTE PETITE ========== */
+@media (max-width: 768px) {
+  .container {
+    padding-top: 120px;
+    padding-bottom: 60px;
+  }
+
+  .intro {
+    font-size: 1.2em;
+    padding: 25px;
+  }
+
+  .intro h1 {
+    font-size: 1.2em;
+  }
+
+  .btn_work, .btn_contact {
+    font-size: 0.8em;
+    padding: 0.5rem 1rem;
+  }
+
+  .identite {
+    font-size: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .contenu {
+    padding: 30px 20px;
+  }
+
+  .card {
+    width: 200px;
+    height: 280px;
+  }
+
+  .card-info h1 {
+    font-size: 28px;
+  }
+
+  /* Section BTS en colonne sur tablette */
+  .bts-info {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 20px;
+  }
+
+  .box-pr {
+    padding: 25px;
+    margin: 20px 15px;
+  }
+
+  .box-pr h1 {
+    font-size: 2em;
+  }
+
+  .info {
+    padding: 20px;
+  }
+
+  .info h2 {
+    font-size: 1.5em;
+  }
+}
+
+/* ========== RESPONSIVE - MOBILE ========== */
+@media (max-width: 600px) {
+  .container {
+    padding-top: 100px;
+    padding-bottom: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .intro {
+    font-size: 1em;
+    padding: 20px 15px;
+    border-radius: 8px;
+    justify-content: center;
+  }
+
+  .intro h1 {
+    font-size: 1.1em;
+    line-height: 1.4;
+  }
+
+  .intro p {
+    font-size: 0.9em;
+  }
+
+  .btn_work, .btn_contact {
+    font-size: 0.75em;
+    padding: 0.5rem 1rem;
+    margin: 5px;
+    width: calc(50% - 10px);
+    max-width: 150px;
+  }
+
+  .identite {
+    font-size: 18px;
+    padding: 20px 15px;
+  }
+
+  .contenu {
+    padding: 20px 10px;
+    gap: 15px;
+  }
+
+  .card-wrap {
+    margin: 5px;
+  }
+
+  .card {
+    width: 160px;
+    height: 220px;
+  }
+
+  .card-info {
+    padding: 15px;
+  }
+
+  .card-info h1 {
+    font-size: 22px;
+  }
+
+  .card-info p {
+    font-size: 14px;
+  }
+
+  /* Section BTS responsive */
+  .box-pr {
+    padding: 20px 15px;
+    margin: 20px 10px;
+    border-radius: 10px;
+  }
+
+  .box-pr h1 {
+    font-size: 1.5em;
+    line-height: 1.3;
+  }
+
+  .box-pr p {
+    font-size: 0.9em;
+    line-height: 1.6;
+  }
+
+  .bts-info {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 0 10px;
+    margin-top: 20px;
+  }
+
+  .info {
+    padding: 15px;
+  }
+
+  .info h2 {
+    font-size: 1.3em;
+  }
+
+  .info p {
+    font-size: 0.85em;
+  }
+
+  .info ul {
+    padding-left: 20px;
+    font-size: 0.85em;
+  }
+
+  .info li {
+    margin: 8px 0;
+  }
+
+  .footer {
+    margin-top: 50px;
+    padding: 15px 10px;
+    font-size: 0.85em;
+  }
+
+  /* Désactiver certaines animations sur mobile pour la performance */
+  .card-wrap:hover .card {
+    box-shadow: rgba(255, 255, 255, 0.2) 0 0 20px 3px, rgba(255, 255, 255, 1) 0 0 0 1px;
+  }
+}
+
+/* ========== RESPONSIVE - TRÈS PETIT MOBILE ========== */
+@media (max-width: 400px) {
+  .container {
+    padding-top: 90px;
+  }
+
+  .intro {
+    font-size: 0.9em;
+    padding: 15px;
+  }
+
+  .intro h1 {
+    font-size: 1em;
+  }
+
+  .btn_work, .btn_contact {
+    font-size: 0.7em;
+    padding: 0.4rem 0.8rem;
+    width: 100%;
+    max-width: none;
+    margin: 5px 0;
+  }
+
+  .card {
+    width: 140px;
+    height: 200px;
+  }
+
+  .card-info h1 {
+    font-size: 20px;
+  }
+
+  .box-pr h1 {
+    font-size: 1.3em;
+  }
+
+  .info h2 {
+    font-size: 1.2em;
+  }
+}
+
+/* ========== MEDIA QUERY DESKTOP LARGE ========== */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .box-pr {
+    max-width: 1200px;
+  }
+}
