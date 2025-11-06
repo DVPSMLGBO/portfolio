@@ -1,20 +1,38 @@
-// Récupération de l'élément checkbox
-const toggle = document.querySelector(".bb8-toggle__checkbox");
+// bb8.js - Gestion du changement de thème
+document.addEventListener('DOMContentLoaded', function() {
+    const bb8 = document.getElementById('bb8');
+    const body = document.body;
+    const html = document.documentElement;
 
-// Variable en mémoire pour stocker le thème
-let currentTheme = "dark";
+    // Fonction pour activer le mode blanc
+    const enableWhiteMode = () => {
+        body.classList.add('white-mode-theme');
+        html.classList.add('white-mode-theme');
+        localStorage.setItem('whiteMode', 'enabled');
+        bb8.checked = true;
+    };
 
-// Écouteur d'événement pour le changement de thème
-toggle.addEventListener("change", function() {
-    document.body.classList.toggle("white-mode");
-    
-    if (document.body.classList.contains("white-mode")) {
-        currentTheme = "white";
-        console.log("Mode clair activé ✓");
-    } else {
-        currentTheme = "dark";
-        console.log("Mode sombre activé ✓");
+    // Fonction pour désactiver le mode blanc (revenir au mode sombre)
+    const disableWhiteMode = () => {
+        body.classList.remove('white-mode-theme');
+        html.classList.remove('white-mode-theme');
+        localStorage.setItem('whiteMode', 'disabled');
+        bb8.checked = false;
+    };
+
+    // Vérifier l'état au chargement de la page
+    let whiteMode = localStorage.getItem('whiteMode');
+    if (whiteMode === 'enabled') {
+        enableWhiteMode();
     }
-});
 
-console.log("Toggle BB8 initialisé ✓");
+    // Écouter les changements sur la checkbox
+    bb8.addEventListener('change', function() {
+        let whiteMode = localStorage.getItem('whiteMode');
+        if (whiteMode !== 'enabled') {
+            enableWhiteMode();
+        } else {
+            disableWhiteMode();
+        }
+    });
+});

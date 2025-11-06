@@ -2,7 +2,6 @@
   position: fixed;
   top: 0;
   width: 100%;
-  backdrop-filter: blur(20px);
   z-index: 1000;
 }
 nav ul {

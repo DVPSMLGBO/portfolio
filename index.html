@@ -13,22 +13,8 @@
     <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
 </head>
 <body>
-    
-    <header class="header">
-        <nav>
-            <ul>
-                <li><a href="index.html" data-image="./icon/home">Accueil</a></li>
-                <li><a href="skill.html" data-image="./icon/skill">Compétences</a></li>
-                <li><a href="certif.html" data-image="./icon/cert">Certification</a></li>
-                <li><a href="projet.html" data-image="./icon/projet">Projets</a></li>
-                <li><a href="contact.html" data-image="./icon/contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <div class="container">
-         
-<label class="bb8-toggle">
-      <input class="bb8-toggle__checkbox" type="checkbox">
+    <label class="bb8-toggle">
+      <input class="bb8-toggle__checkbox" type="checkbox" id="bb8">
       <div class="bb8-toggle__container">
         <div class="bb8-toggle__scenery">
           <div class="bb8-toggle__star"></div>
@@ -60,6 +46,20 @@
         </div>
       </div>
     </label>
+    <header class="header">
+        <nav>
+            <ul>
+                <li><a href="index.html" data-image="./icon/home">Accueil</a></li>
+                <li><a href="skill.html" data-image="./icon/skill">Compétences</a></li>
+                <li><a href="certif.html" data-image="./icon/cert">Certification</a></li>
+                <li><a href="projet.html" data-image="./icon/projet">Projets</a></li>
+                <li><a href="contact.html" data-image="./icon/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+         
+
         <div class="intro">
             <h1>"Un portfolio est le miroir de l'âme créative"</h1>
             <p>Explorez la mienne.</p>
@@ -83,8 +83,8 @@
             <p slot="content">...</p>
         </card>
        <div class="box-pr">
-    <h1 style="color: #fff;">le <span>BTS SIO</span></h1>
-    <p style="color: #fff;">Le BTS Services Informatiques aux Organisations (SIO) est une formation en deux ans après le bac, qui forme des techniciens capables de répondre aux besoins informatiques des entreprises. 
+    <h1 >le <span>BTS SIO</span></h1>
+    <p>Le BTS Services Informatiques aux Organisations (SIO) est une formation en deux ans après le bac, qui forme des techniciens capables de répondre aux besoins informatiques des entreprises. 
     Elle couvre de nombreux langages de programmation comme le <strong>HTML</strong>, <strong>CSS</strong>, <strong>C#</strong>, <strong>PHP</strong>, <strong>Python</strong>, <strong>Java</strong>... 
     et aborde aussi la gestion de bases de données, la cybersécurité, le travail en mode projet et la communication professionnelle.</p><br>
     <p>Le BTS SIO propose deux spécialités selon le domaine d'intérêt de l'étudiant :</p>
@@ -92,27 +92,27 @@
 
 <div class="bts-info">
     <div class="info">
-        <h2 style="color: #fff;">SLAM</h2>
-        <p style="color: #fff;"><strong>Solutions Logicielles et Applications Métiers (SLAM)</strong> forme à la conception, au développement et à la maintenance d’applications informatiques.</p>
+        <h2>SLAM</h2>
+        <p><strong>Solutions Logicielles et Applications Métiers (SLAM)</strong> forme à la conception, au développement et à la maintenance d’applications informatiques.</p>
         <ul style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
             <li>Développement de sites web et d’applications mobiles</li>
             <li>Création et gestion de bases de données</li>
             <li>Programmation orientée objet (Java, C#, PHP...)</li>
             <li>Travail en équipe sur des projets concrets</li>
         </ul>
-        <p style="color: #fff;">Débouchés : Développeur web, concepteur d’applications, analyste programmeur, intégrateur web, technicien support logiciel…</p>
+        <p>Débouchés : Développeur web, concepteur d’applications, analyste programmeur, intégrateur web, technicien support logiciel…</p>
     </div>
 
     <div class="info">
-        <h2 style="color: #fff;">SISR</h2>
-        <p style="color: #fff;"><strong>Solutions d’Infrastructure, Systèmes et Réseaux (SISR)</strong> prépare aux métiers de l’administration et de la sécurité des réseaux et serveurs.</p>
+        <h2>SISR</h2>
+        <p><strong>Solutions d’Infrastructure, Systèmes et Réseaux (SISR)</strong> prépare aux métiers de l’administration et de la sécurité des réseaux et serveurs.</p>
         <ul style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
             <li>Installation et configuration de serveurs et postes clients</li>
             <li>Gestion et sécurisation des réseaux informatiques</li>
             <li>Maintenance du matériel et des systèmes d’exploitation</li>
             <li>Virtualisation, cloud et gestion des accès utilisateurs</li>
         </ul>
-        <p style="color: #fff;">Débouchés : Administrateur réseau, technicien systèmes et réseaux, gestionnaire de parc informatique, technicien support infrastructure…</p>
+        <p>Débouchés : Administrateur réseau, technicien systèmes et réseaux, gestionnaire de parc informatique, technicien support infrastructure…</p>
     </div>
 </div>
 
@@ -123,5 +123,6 @@
     <script src="script.js"></script>
     <script src="ani_index.js"></script>
     <script src="loading.js"></script>
+    <script src="bb8.js"></script>
 </body>
 </html>

@@ -1,10 +1,8 @@
-/* From Uiverse.io by Galahhad */ 
-/* REMASTERED */
-/* RTX-ON */
-/* completely redone toggle and droid */
-
 .bb8-toggle {
-  --toggle-size: 16px;
+  position: fixed;
+  top: 20px;  /* Distance depuis le haut */
+  right: 20px;  /* Distance depuis la droite */
+  --toggle-size: 10px;
   /* finally I removed the scale now everything depends on the font-size */
   /* --margin-top-for-head: 1.75em; */
   /* it's just in case 👆 */
@@ -18,6 +16,7 @@
   --transition: 0.4s;
   --accent: #de7d2f;
   --bb8-bg: #fff;
+  z-index: 1000;  /* Pour s'assurer qu'il reste au-dessus des autres éléments */
 }
 
 .bb8-toggle,
