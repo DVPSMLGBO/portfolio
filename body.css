@@ -1,6 +1,7 @@
 @font-face {
   font-family: 'majestic-vision-font';
   src: url('./majestic-vision-font/MajesticVisionRegular-7O7Zl.ttf') format('truetype');
+  
 }
 body, html {
   font-family: majestic-vision-font, sans-serif;
