@@ -18,6 +18,9 @@ nav a[data-image="./icon/cert"]::before {
 nav a[data-image="./icon/contact"]::before {
   background-image: url('./icon/contact.png.png');
 }
+nav a[data-image="./icon/training"]::before {
+  background-image: url('./icon/training.png');
+}
 
 /* Soulignement au hover */
 nav a::after {
