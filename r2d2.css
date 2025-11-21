@@ -1,19 +1,24 @@
+/* REMASTERED */
+/* RTX-ON */
+/* completely redone toggle and droid */
+
 .bb8-toggle {
-  position: fixed;
-  top: 13px;
-  right: 5px;
-  --toggle-size: 10px;
+  --toggle-size: 9px;
   --toggle-width: 10.625em;
   --toggle-height: 5.625em;
   --toggle-offset: calc((var(--toggle-height) - var(--bb8-diameter)) / 2);
   --toggle-bg: linear-gradient(#2c4770, #070e2b 35%, #628cac 50% 70%, #a6c5d4)
     no-repeat;
   --bb8-diameter: 4.375em;
-  --radius: 100em;
+  --radius: 99em;
   --transition: 0.4s;
   --accent: #de7d2f;
   --bb8-bg: #fff;
-  z-index: 1000;  /* Pour s'assurer qu'il reste au-dessus des autres éléments */
+  
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
 }
 
 .bb8-toggle,
@@ -36,7 +41,6 @@
   appearance: none;
   display: none;
 }
-
 .bb8-toggle__container {
   width: var(--toggle-width);
   height: var(--toggle-height);
@@ -48,6 +52,7 @@
   -webkit-transition: var(--transition);
   -o-transition: var(--transition);
   transition: var(--transition);
+  cursor: pointer; /* Ajout du curseur pointeur */
 }
 
 .bb8 {
